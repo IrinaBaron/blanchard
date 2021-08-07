@@ -103,7 +103,7 @@ var swiper1 = new Swiper('.swiper2', {
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + (index + 1) + '</span>';
-			}
+		}
 	},
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -358,7 +358,7 @@ var swiper4 = new Swiper('.swiper4', {
       320: {
         slidesPerGroup: 1,
         slidesPerView: 1,
-        spaceBetween: 80,
+        // spaceBetween: 80,
       },
       500: {
         slidesPerGroup: 1,
