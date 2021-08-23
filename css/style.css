@@ -545,15 +545,15 @@ p {
 
 @keyframes anim {
   0% {
-    background-image: url('../image/hero/hero_01.png');
+    background-image: url('../image/hero/hero_01.jpg');
   }
 
   50% {
-    background-image: url('../image/hero/hero_02.png');
+    background-image: url('../image/hero/hero_02.jpg');
   }
 
   100% {
-    background-image: url('../image/hero/hero_03.png');
+    background-image: url('../image/hero/hero_03.jpg');
   }
 }
 
@@ -753,7 +753,7 @@ p {
 }
 
 .swiper-button-prev {
-  position: absolute;
+  /* position: absolute; */
   top: 46px;
   left: 4px;
   width: 30px;
@@ -779,7 +779,7 @@ p {
 }
 
 .swiper-button-next {
-  position: absolute;
+  /* position: absolute; */
   top: 46px;
   left: 9%;
   width: 30px;
@@ -1359,6 +1359,13 @@ body .modal_active {
 .info-right-list__item:active .info-right-subtitle {
   color: var(--active-color);
   cursor: pointer;
+}
+
+.ui-accordion-content {
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .ui-accordion-header-active {

@@ -11,36 +11,8 @@
 }
 
 @media (min-width: 1366px) and (max-width: 1919px) {
-  /* .container {
-    max-width: 100%;
-    height: 100%;
-  }
 
-  .hero {
-    background-size: 100%;
-    animation: anim alternate 12s linear infinite, size alternate 8s linear infinite;
-  }
-
-  .hero__container {
-    height: 100%;
-    min-height: 700px;
-  }
-
-  @keyframes anim {
-    0% {
-      background-image: url('../image/hero/hero_01.png');
-    }
-  
-    50% {
-      background-image: url('../image/hero/hero_02.png');
-    }
-  
-    100% {
-      background-image: url('../image/hero/hero_03.png');
-    }
-  } */
-
-  /* @keyframes size {
+  @keyframes size {
     from {
       background-size: 130%;
     }
@@ -48,7 +20,7 @@
     to {
       background-size: 150%;
     }
-  } */
+  }
 
   .nav__item:not(:last-child) {
     margin-right: 35px;
@@ -348,15 +320,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/1024/banner_01.png');
+      background-image: url('../image/hero/1024/banner_01.jpg');
     }
   
     50% {
-      background-image: url('../image/hero/1024/banner_02.png');
+      background-image: url('../image/hero/1024/banner_02.jpg');
     }
   
     100% {
-      background-image: url('../image/hero/1024/banner_03.png');
+      background-image: url('../image/hero/1024/banner_03.jpg');
     }
   }
 
@@ -456,6 +428,7 @@
   .ui-accordion-content {
     flex-wrap: wrap;
     width: 100%;
+    max-height: 434px;
   }
 
   .ui-accordion-content__item:not(:last-child) {
@@ -919,15 +892,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/768/banner_1.png');
+      background-image: url('../image/hero/768/banner_1.jpg');
     }
   
     50% {
-      background-image: url('../image/hero/768/banner_2.png');
+      background-image: url('../image/hero/768/banner_2.jpg');
     }
   
     100% {
-      background-image: url('../image/hero/768/banner_3.png');
+      background-image: url('../image/hero/768/banner_3.jpg');
     }
   }
 
@@ -1575,15 +1548,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/320/banner_1.png');
+      background-image: url('../image/hero/320/banner_1.jpg');
     }
   
     50% {
-      background-image: url('../image/hero/320/banner_2.png');
+      background-image: url('../image/hero/320/banner_2.jpg');
     }
   
     100% {
-      background-image: url('../image/hero/320/banner_3.png');
+      background-image: url('../image/hero/320/banner_3.jpg');
     }
   }
 
@@ -2259,15 +2232,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/320/banner_1.png');
+      background-image: url('../image/hero/320/banner_1.jpg');
     }
   
     50% {
-      background-image: url('../image/hero/320/banner_2.png');
+      background-image: url('../image/hero/320/banner_2.jpg');
     }
   
     100% {
-      background-image: url('../image/hero/320/banner_3.png');
+      background-image: url('../image/hero/320/banner_3.jpg');
     }
   }
 
