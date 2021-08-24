@@ -765,7 +765,7 @@ p {
 }
 
 .swiper-button-prev {
-  /* position: absolute; */
+  position: absolute;
   top: 46px;
   left: 4px;
   width: 30px;
