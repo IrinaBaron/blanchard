@@ -539,6 +539,7 @@ p {
 .hero {
   width: 100%;
   min-height: 700px;
+  background-image: url('../image/hero/hero_01.webp');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -548,15 +549,15 @@ p {
 
 @keyframes anim {
   0% {
-    background-image: url('../image/hero/hero_01.jpg');
+    background-image: url('../image/hero/hero_01.webp');
   }
 
   50% {
-    background-image: url('../image/hero/hero_02.jpg');
+    background-image: url('../image/hero/hero_02.webp');
   }
 
   100% {
-    background-image: url('../image/hero/hero_03.jpg');
+    background-image: url('../image/hero/hero_03.webp');
   }
 }
 
