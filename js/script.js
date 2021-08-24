@@ -135,7 +135,8 @@ var swiper1 = new Swiper('.swiper2', {
 		clickable: true,
 		renderBullet: function (index, className) {
 			return '<span class="' + className + '">' + (index + 1) + '</span>';
-		}
+		},
+    hideOnClick: true,
 	},
 	navigation: {
 		nextEl: '.swiper-button-next',
