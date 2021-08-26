@@ -80,6 +80,9 @@
     top: 30px;
   }
 
+  .check__wrap {
+    max-height: 100%;
+  }
   .pub__slider {
     height: 320px;
   }
@@ -207,10 +210,15 @@
     z-index: 20;
   }
 
+  .logo {
+    width: 188px;
+    height: 42px;
+  }
+
   .header__nav.open-menu {
     left: 0;
     width: 100%;
-    height: 768px;
+    height: 800px;
     z-index: 15;
     transition: left .5s ease-in-out;
   }
@@ -320,15 +328,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/1024/banner_01.jpg');
+      background-image: url('../image/hero/1024/banner_01.webp');
     }
   
     50% {
-      background-image: url('../image/hero/1024/banner_02.jpg');
+      background-image: url('../image/hero/1024/banner_02.webp');
     }
   
     100% {
-      background-image: url('../image/hero/1024/banner_03.jpg');
+      background-image: url('../image/hero/1024/banner_03.webp');
     }
   }
 
@@ -735,6 +743,11 @@
     z-index: 20;
   }
 
+  .logo {
+    width: 188px;
+    height: 42px;
+  }
+
   .header__nav.open-menu {
     left: 0;
     width: 100%;
@@ -892,15 +905,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/768/banner_1.jpg');
+      background-image: url('../image/hero/768/banner_1.webp');
     }
   
     50% {
-      background-image: url('../image/hero/768/banner_2.jpg');
+      background-image: url('../image/hero/768/banner_2.webp');
     }
   
     100% {
-      background-image: url('../image/hero/768/banner_3.jpg');
+      background-image: url('../image/hero/768/banner_3.webp');
     }
   }
 
@@ -1376,6 +1389,11 @@
     transition: left .5s ease-in-out;
   }
 
+  .logo {
+    width: 97px;
+    height: 22px;
+  }
+
   .nav__link {
     font-style: normal;
     font-weight: 600;
@@ -1548,15 +1566,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/320/banner_1.jpg');
+      background-image: url('../image/hero/320/banner_1.webp');
     }
   
     50% {
-      background-image: url('../image/hero/320/banner_2.jpg');
+      background-image: url('../image/hero/320/banner_2.webp');
     }
   
     100% {
-      background-image: url('../image/hero/320/banner_3.jpg');
+      background-image: url('../image/hero/320/banner_3.webp');
     }
   }
 
@@ -2050,6 +2068,11 @@
     transition: left .5s ease-in-out;
   }
 
+  .logo {
+    width: 97px;
+    height: 22px;
+  }
+
   .nav__link {
     font-style: normal;
     font-weight: 600;
@@ -2232,15 +2255,15 @@
 
   @keyframes anim {
     0% {
-      background-image: url('../image/hero/320/banner_1.jpg');
+      background-image: url('../image/hero/320/banner_1.webp');
     }
   
     50% {
-      background-image: url('../image/hero/320/banner_2.jpg');
+      background-image: url('../image/hero/320/banner_2.webp');
     }
   
     100% {
-      background-image: url('../image/hero/320/banner_3.jpg');
+      background-image: url('../image/hero/320/banner_3.webp');
     }
   }
 

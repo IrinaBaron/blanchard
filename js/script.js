@@ -127,15 +127,28 @@ document.querySelector('#my_Drop5').addEventListener('click', function () {
 
 var swiper1 = new Swiper('.swiper2', {
 	speed: 600,
-	
-  slidesPerColumnFill: 'row',
+	grid: {
+    // rows: 2,
+    fill: 'row',
+  },
 	pagination: {
 		el: '.swiper-pagination1',
 		type: 'fraction',
 		clickable: true,
-		renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + (index + 1) + '</span>';
-		},
+		// renderBullet: function (index, className) {
+			// var appendNumber = 4;
+      // var prependNumber = 1;
+      // document
+      //   .querySelector(".prepend-2-slides")
+      //   .addEventListener("click", function (e) {
+      //     e.preventDefault();
+      //     swiper.prependSlide([
+      //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      //     ]);
+      //   });
+      // return '<span class="' + className + '">' + (index + 1) + '</span>';
+		// },
     hideOnClick: true,
 	},
 	navigation: {
@@ -160,24 +173,40 @@ var swiper1 = new Swiper('.swiper2', {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
     1024: {
       slidesPerGroup: 2,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     },
 		1366: {
       slidesPerGroup: 2,
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 50,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
 	  },
     1920: {
       slidesPerGroup: 3,
       slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
     }
   },
 });
