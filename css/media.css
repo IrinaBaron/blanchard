@@ -627,6 +627,8 @@
 
   .footer__logo {
     padding-top: 8px;
+    width: 173px;
+    height: 40px;
   }
 
   .footer__link {
@@ -1247,6 +1249,8 @@
 
   .footer__logo {
     padding-top: 10px;
+    width: 173px;
+    height: 40px;
   }
   
   .footer__link {
@@ -1291,7 +1295,8 @@
     line-height: 38px;
   }
 
-  .logo {
+  .logo,
+  .footer__logo {
     width: 97px;
     height: 22px;
   }
@@ -1971,7 +1976,8 @@
     line-height: 38px;
   }
 
-  .logo {
+  .logo,
+  .footer__logo {
     width: 97px;
     height: 22px;
   }
@@ -2068,7 +2074,8 @@
     transition: left .5s ease-in-out;
   }
 
-  .logo {
+  .logo,
+  .footer__img {
     width: 97px;
     height: 22px;
   }
@@ -2156,7 +2163,6 @@
     position: absolute;
     top: 31px;
     left: 73px;
-    /* display: ; */
     max-width: 183px;
     height: 23px;
     border: none;

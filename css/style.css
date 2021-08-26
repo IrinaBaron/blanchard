@@ -117,7 +117,8 @@ p {
   position: absolute;
 }
 
-.logo {
+.logo,
+.footer__img {
   width: 173px;
   height: 40px;
 }
@@ -1584,13 +1585,6 @@ body .modal_active {
   transition: font-weight .4s ease-in-out;
 }
 
-
-/* .events-wrap__more:focus-visible {
-  border: 1px solid var(--color-for-dark);
-  background-color: var(--primery-color);
-  color: var(--color-for-dark);
-} */
-
 .events__btn {
   position: relative;
   left: 50%;
@@ -1810,6 +1804,10 @@ body .modal_active {
   color: var(--color-for-dark);
   background: rgba(157, 92, 208, 0.5);
   outline: none;
+}
+
+.price__input::placeholder {
+  color: var(--color-for-dark);
 }
 
 input[type="number"]::-webkit-outer-spin-button,

@@ -125,16 +125,18 @@ document.querySelector('#my_Drop5').addEventListener('click', function () {
 
 
 
-var swiper1 = new Swiper('.swiper2', {
+const swiper1 = new Swiper('.swiper2', {
 	speed: 600,
 	grid: {
     // rows: 2,
     fill: 'row',
   },
+  loop: false,
 	pagination: {
 		el: '.swiper-pagination1',
 		type: 'fraction',
 		clickable: true,
+    dynamicBullets: true,
 		// renderBullet: function (index, className) {
 			// var appendNumber = 4;
       // var prependNumber = 1;
@@ -149,11 +151,12 @@ var swiper1 = new Swiper('.swiper2', {
       //   });
       // return '<span class="' + className + '">' + (index + 1) + '</span>';
 		// },
-    hideOnClick: true,
+    // hideOnClick: true,
 	},
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+    hideOnClick: true,
 	},
 	breakpoints: {
     320: {
