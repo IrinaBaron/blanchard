@@ -154,8 +154,8 @@ const swiper1 = new Swiper('.swiper2', {
     // hideOnClick: true,
 	},
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next2',
+		prevEl: '.swiper-button-prev2',
     hideOnClick: true,
 	},
 	breakpoints: {
@@ -322,7 +322,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   
 
 if (window.matchMedia("(min-width: 768px)").matches) {
-  var swiper2 = new Swiper('.swiper3', {
+  const swiper2 = new Swiper('.swiper3', {
     speed: 600,
     slidesPerGroup: 3,
     slidesPerView: 3,
@@ -336,8 +336,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         }
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper3 .swiper-button-next',
+      prevEl: '.swiper3 .swiper-button-prev',
       },
     breakpoints: {
       768: {
