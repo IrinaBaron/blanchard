@@ -128,7 +128,6 @@ document.querySelector('#my_Drop5').addEventListener('click', function () {
 const swiper1 = new Swiper('.swiper2', {
 	speed: 600,
 	grid: {
-    // rows: 2,
     fill: 'row',
   },
   loop: false,
@@ -137,21 +136,6 @@ const swiper1 = new Swiper('.swiper2', {
 		type: 'fraction',
 		clickable: true,
     dynamicBullets: true,
-		// renderBullet: function (index, className) {
-			// var appendNumber = 4;
-      // var prependNumber = 1;
-      // document
-      //   .querySelector(".prepend-2-slides")
-      //   .addEventListener("click", function (e) {
-      //     e.preventDefault();
-      //     swiper.prependSlide([
-      //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      //     ]);
-      //   });
-      // return '<span class="' + className + '">' + (index + 1) + '</span>';
-		// },
-    // hideOnClick: true,
 	},
 	navigation: {
 		nextEl: '.swiper-button-next2',
@@ -238,11 +222,29 @@ $(function () {
 
 $(function() {
 	$("#accordion").accordion({
-  active: true,
+  active: false,
   heightStyle: "content",
-  icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+  icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" },
+
 	});
-  
+  // if(document.onclick)
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.info-right')) {
+  //     $('.info-right-subtitle').removeClass('ui-accordion-header-active');
+  //   }
+  // }
+});
+
+$(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#accordion"); // тут указываем ID элемента
+    let info = $('.ui-accordion-content');
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.info-right-subtitle').removeClass('ui-accordion-header-active', 'ui-state-active'); // скрываем его
+          // info.hide();
+		}
+	});
 });
 
 
