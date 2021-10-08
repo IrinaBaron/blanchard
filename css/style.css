@@ -1106,9 +1106,8 @@ p {
   background-image: url('../image/galery/gal_slide5_06.jpg');
 }
 
-body .modal_active {
+body.active {
   overflow-y: hidden;
-  /* position: fixed; */
 }
 
 .modal {
@@ -1118,8 +1117,6 @@ body .modal_active {
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.6);
   visibility: hidden;
@@ -1227,10 +1224,10 @@ body .modal_active {
   height: auto;
 }
 
-.catalog__item {
+/* .catalog__item {
   width: 46px;
   height: 46px;
-}
+} */
 
 .catalog__item:not(:last-child) {
   margin-right: 50px;
@@ -1249,16 +1246,12 @@ body .modal_active {
   transition: width .4s ease-in-out, height .4s ease-in-out, filter .4s ease-in-out, border-color .4s ease-in-out;
 }
 
-.catalog__btn:hover {
-  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
-  /* border-radius: 50%; */
-}
 
 /* .catalog__btn:focus {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
   border-radius: 50%;
 } */
-.js-tab-trigger::after {
+.js-tab-trigger.active::after {
   content: '';
   position: absolute; 
   top: 45%;
@@ -1269,6 +1262,12 @@ body .modal_active {
   border-radius: 50%;
   transform: translate(-50%,-50%);
   z-index: -1;
+}
+
+
+.catalog__btn:hover {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  /* border-radius: 50%; */
 }
 
 .js-tab-trigger.active:active {
@@ -1418,6 +1417,10 @@ body .modal_active {
   cursor: pointer;
 }
 
+.info-right-list__subtitle:before .ui-state-active {
+  height: 100px;
+}
+
 .info-right-list__subtitle:active:before {
   height: 100px;
 }
@@ -1487,19 +1490,22 @@ body .modal_active {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  /* visibility: hidden; */
 }
 
 .ui-accordion-header-active {
   margin-bottom: 40px;
+  z-index: -1;
 }
 
 .info-right-list__item:hover .ui-accordion-header-active {
   color: var(--hover-color);
 }
 
-.info-right.ui-accordion-content {
+.ui-accordion-content .ui-accordion-content-active {
   display: flex;
   flex-direction: column;
+  visibility: visible;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -1515,6 +1521,7 @@ body .modal_active {
 
 .ui-accordion-content__item {
   max-width: 208px;
+  z-index: 20;
 }
 
 .ui-accordion-content__item:not(:last-child) {
