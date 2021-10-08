@@ -28,7 +28,13 @@ $(document).ready(function () {
   
 });
 
-
+const element = document.querySelector('#selectCustom'); 
+const choisec = new Choices(element, {
+  searchEnabled: false,
+  resetScrollPosition: false,
+  appendValue: null,
+  
+});
 
 // let autor = document.querySelectorAll('.ui-accordion-content__link');
 
@@ -43,4 +49,3 @@ $(document).ready(function () {
 //     });
 //   });
 // };
-  

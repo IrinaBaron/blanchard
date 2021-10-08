@@ -17,6 +17,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -29,6 +30,7 @@
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
   </script>
+  <script defer src="js/choices.min.js"></script>
   <script defer src="js/drop.js"></script>
   <script defer src="js/swiper1.js"></script>
   <script defer src="js/tabs.js"></script>
@@ -81,7 +83,7 @@
           <button class="link-btn btn" aria-label="войти личный кабинет">Войти</button>
         </nav>
         <form class="header__search search-form">
-          <input class="search-form__input" type="search" value="">
+          <input class="search-form__input" type="search" value="" aria-label="поиск">
           <a class="search-form__close" aria-label="Кнопка закрыть"></a>
           <button class="search-form__search" aria-label="Кнопка найти"></button>
           <a class="header-search__link" href="#" aria-label="Кнопка войти">Войти</a>
@@ -233,7 +235,7 @@
           <label class="galery-left__lable">
             Фильтровать по:
           </label>
-          <select class="galery-left__select left-select">
+          <select class="galery-left__select left-select" id="selectCustom">
             <option class="left-select_option" value="autor">Автор</option>
             <option class="left-select_option" value="direction">Направление</option>
             <option class="left-select_option" value="technique">Техника</option>
