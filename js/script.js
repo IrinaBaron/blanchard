@@ -9,21 +9,13 @@ $(document).ready(function () {
 });
 
 
-// let openClose = document.querySelector('.search-form__close');
-// let searchForm = document.querySelector('.seacrh-form');
-
-// searchForm.addEventListener('click', function () {
-//   searchForm.classList.add('search-active');
-//   openClose.classList.add('search-active')
-// })
-
-
 $(document).ready(function () {
   
-	$('.search-form__close').click(function () {
+	$('.search-form__close').click(function (e) {
+		e.preventDefault();
 	  $('.search-form').toggleClass('search-active'); 
 	  $('.body').toggleClass('stop-scrolling');
-    $('.search-form__close').toggleClass('search-active');
+		$('.search-form__close').toggleClass('search-active');
 	});
   
 });

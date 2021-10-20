@@ -964,10 +964,33 @@
 
   .galery-left__text {
     bottom: 69px;
+    left: 50px;
+    right: 43px;
   }
 
   .galery-left__select {
     margin-bottom: 73px;
+  }
+
+  .choices__inner {
+    z-index: 10000;
+  }
+
+  .choices__item {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .choices__list--dropdown,
+  .choices.is-open .choices__item,
+  .choices__list--dropdown .choices__item {
+    color: var(--color-title);
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+  }
+
+  .choices__list.choices__list--dropdown.is-active {
+    color: var(--color-for-dark);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .galery__right {
@@ -1021,6 +1044,15 @@
 
   .catalog__content {
     margin-bottom: 32px;
+  }
+
+  .catalog__info .ui-accordion-content {
+    /* min-height: 420px; */
+    max-height: 384px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* visibility: hidden; */
   }
 
   .info-left {
@@ -1110,9 +1142,9 @@
     left: 15%;
   }
 
-  .swiper3 .swiper-wrapper {
+  /* .swiper3 .swiper-wrapper {
     padding-left: 27px;
-  }
+  } */
 
   .pub__price {
     right: 5px;
@@ -1605,6 +1637,27 @@
 
   .galery-left__text {
     bottom: -630px;
+  }
+
+  .choices__inner {
+    z-index: 10000;
+  }
+
+  .choices__item {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .choices__list--dropdown,
+  .choices.is-open .choices__item,
+  .choices__list--dropdown .choices__item {
+    color: var(--color-title);
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+  }
+
+  .choices__list.choices__list--dropdown.is-active {
+    color: var(--color-for-dark);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .galery__right {
@@ -2314,6 +2367,27 @@
 
   .galery-left__lable {
     margin-bottom: 5px;
+  }
+
+  .choices__inner {
+    z-index: 10000;
+  }
+
+  .choices__item {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .choices__list--dropdown,
+  .choices.is-open .choices__item,
+  .choices__list--dropdown .choices__item {
+    color: var(--color-title);
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+  }
+
+  .choices__list.choices__list--dropdown.is-active {
+    color: var(--color-for-dark);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .left-select_option {

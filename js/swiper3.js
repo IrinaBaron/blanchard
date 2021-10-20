@@ -20,7 +20,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
       768: {
         slidesPerGroup: 2,
         slidesPerView: 2,
-        spaceBetween: 49,
+        spaceBetween: 34,
       },
       1024: {
         slidesPerGroup: 2,
