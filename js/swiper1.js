@@ -48,9 +48,19 @@ const swiper1 = new Swiper('.swiper2', {
         fill: 'row',
       },
     },
+    1281: {
+      slidesPerGroup: 3,
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 50,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
 		1366: {
-      slidesPerGroup: 2,
-      slidesPerView: 2,
+      slidesPerGroup: 3,
+      slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
       grid: {

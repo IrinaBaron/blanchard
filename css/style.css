@@ -1586,8 +1586,7 @@ body.active {
   max-height: 380px;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* visibility: hidden; */
+  flex-wrap: wrap;
 }
 
 .ui-accordion-header-active {
@@ -1626,7 +1625,6 @@ body.active {
 }
 
 .ui-accordion-content__link {
-  /* display: block; */
   margin-top: 0;
   padding: 0;
   border: 2px solid transparent;
@@ -1857,6 +1855,7 @@ body.active {
 .check__wrap {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   margin-bottom: 25px;
 }
 

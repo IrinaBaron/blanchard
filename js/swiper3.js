@@ -27,6 +27,11 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         slidesPerView: 2,
         spaceBetween: 49,
       },
+      1281: {
+        // slidesPerGroup: 2,
+        slidesPerView: 3,
+        spaceBetween: 49,
+      },
       1366: {
         slidesPerView: 3,
         spaceBetween: 50,
