@@ -543,28 +543,44 @@ p {
 /* main  */
 
 .hero {
+  position: relative;
   width: 100%;
   min-height: 700px;
-  background-image: url('../image/hero/hero_01.webp');
+  /* background-image: url('../image/hero/hero_01.webp'); */
+  /* background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: background-image .4s ease-in-out; */
+  /* animation: anim alternate 12s linear infinite, size alternate 8s linear infinite; */
+}
+
+.hero__swiper-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__swiper-container .swiper-slide {
+  width: 100%;
+  min-height: 700px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
-  transition: background-image .4s ease-in-out;
   animation: anim alternate 12s linear infinite, size alternate 8s linear infinite;
 }
 
-@keyframes anim {
-  0% {
-    background-image: url('../image/hero/hero_01.webp');
-  }
+.slide1 {
+  background-image: url('../image/hero/hero_01.webp');
+}
 
-  50% {
-    background-image: url('../image/hero/hero_02.webp');
-  }
+.slide2 {
+  background-image: url('../image/hero/hero_02.webp');
+}
 
-  100% {
-    background-image: url('../image/hero/hero_03.webp');
-  }
+.slide3 {
+  background-image: url('../image/hero/hero_03.webp');
 }
 
 @keyframes size {
@@ -581,9 +597,11 @@ p {
   padding-top: 142px;
   padding-bottom: 123px;
   width: 100%;
+  z-index: 2;
 }
 
 .hero__title {
+  position: relative;
   margin: 0;
   margin-bottom: 21px;
   max-width: 597px;
@@ -597,6 +615,7 @@ p {
 }
 
 .hero__text {
+  position: relative;
   margin: 0;
   margin-bottom: 91px;
   max-width: 580px;
@@ -610,6 +629,7 @@ p {
 }
 
 .hero__btn {
+  position: relative;
   display: inline-block;
   padding: 19px 37px;
   border: 3px solid var(--primery-color);

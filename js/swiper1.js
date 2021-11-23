@@ -1,3 +1,13 @@
+const mySwiper0 = new Swiper('.hero__swiper-container', {
+  slidesPerView: 1,
+  loop: true,
+  effect: 'fade',
+  speed: 2000,
+  autoplay: {
+    delay: 6000,
+  },
+});
+
 const swiper1 = new Swiper('.swiper2', {
 	speed: 600,
 	grid: {
