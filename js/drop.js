@@ -1,31 +1,74 @@
-let myFunction = document.querySelector('#myFunction');
-let headerLinks = document.querySelectorAll('.menu-item__click');
-let linksDrop = document.querySelectorAll('.menu-link__drop');
-let dropdowns = document.getElementsByClassName("menu-item__link");
+document.addEventListener('DOMContentLoaded', event => {
+  let myFunction = document.querySelector('#myFunction');
+  let headerLinks = document.querySelectorAll('.menu-item__click');
+  let linksItems = document.querySelectorAll('.header-menu__item');
+  let dropdowns = document.getElementsByClassName("menu-item__link");
 
-window.onclick = function (event) {
-  if (!event.target.matches('.menu-item__click')) {
-      
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
+  window.onclick = function (event) {
 
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    if (!event.target.matches('.header-menu__item .menu-item__click')) {
+
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
-for (let headerLink of headerLinks) {
-  headerLink.addEventListener('click', function () {
-    
+
+  for (let headerLink of headerLinks) {
+    headerLink.addEventListener('click', clickOn);
+
+  }
+
+  for (let linkItem of linksItems) {
+    linkItem.addEventListener('keypress', clickKey);
+  }
+
+  function clickOn(event) {
+
     dropdowns.forEach(dropdown => {
       if (dropdown !== this.nextElementSibling) {
         dropdown.classList.remove('show');
       }
     });
-    
-    this.nextElementSibling.classList.toggle('show');
-   
-  })
-}
 
+    this.nextElementSibling.classList.toggle('show');
+
+  }
+
+  // window
+  function clickKey(e) {
+    console.log(e.currentTarget)
+    console.log(e.type)
+    if(e.key == 'Enter') {
+      console.log('ok');
+      clickOn;
+      // for (let headerLink of headerLinks) {
+      //   e.currentTarget.addEventListener('click', clickOn);
+    
+      // }
+    }
+  //   if (!e.target.matches('.header-menu__item .menu-item__click')) {
+
+  //     for (let i = 0; i < dropdowns.length; i++) {
+  //       let openDropdown = dropdowns[i];
+
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   }
+  //   dropdowns.forEach(dropdown => {
+  //     if (dropdown !== this.nextElementSibling) {
+  //       dropdown.classList.remove('show');
+  //     }
+  //   });
+
+  //   this.nextElementSibling.classList.toggle('show');
+  }
+
+
+})

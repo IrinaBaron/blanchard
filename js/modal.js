@@ -4,6 +4,10 @@ $(function () {
     $('.modal').addClass('modal_active');
     $('body').addClass('active')
   })
+  $('.swiper-galery').keypress(function () {
+    $('.modal').addClass('modal_active');
+    $('body').addClass('active')
+  })
 
   $('.close').click(function () {
     $('.modal').removeClass('modal_active');

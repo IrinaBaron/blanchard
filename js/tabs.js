@@ -16,7 +16,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
       });
   });
 } else {
-  jsTriggers = document.querySelector('.js-tab-content.active'),
+  // jsTriggers = document.querySelector('.js-tab-content.active'),
     $('.js-tab-content').removeClass('active');
   
     var tabNavs = document.querySelectorAll(".js-tab-trigger");
