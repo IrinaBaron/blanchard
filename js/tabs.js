@@ -1,9 +1,11 @@
 if (window.matchMedia("(min-width: 768px)").matches) {
-  var jsTriggers = document.querySelectorAll('.js-tab-trigger'),
+  
+  let jsTriggers = document.getElementsByClassName('js-tab-trigger'),
     jsContents = document.querySelectorAll('.js-tab-content');
     jsTriggers.forEach(function (trigger) {
-      trigger.addEventListener('click', function () {
-        var id = this.getAttribute('data-tab'),
+      trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        let id = this.getAttribute('data-tab'),
           content = document.querySelector('.js-tab-content[data-tab="' + id + '"]'),
           activeTrigger = document.querySelector('.js-tab-trigger.active'),
           activeContent = document.querySelector('.js-tab-content.active');
@@ -16,20 +18,21 @@ if (window.matchMedia("(min-width: 768px)").matches) {
       });
   });
 } else {
-  // jsTriggers = document.querySelector('.js-tab-content.active'),
-    $('.js-tab-content').removeClass('active');
   
-    var tabNavs = document.querySelectorAll(".js-tab-trigger");
-    var tabPanes = document.querySelectorAll(".tab-content__item");
+    document.querySelector('.js-tab-content.active').classList.remove('active');
+    document.querySelector('.js-tab-trigger.active').classList.remove('active');
+  
+    let tabNavs = document.querySelectorAll(".js-tab-trigger");
+    let tabPanes = document.querySelectorAll(".tab-content__item");
     
-    for (var i = 0; i < tabNavs.length; i++) {
+    for (let i = 0; i < tabNavs.length; i++) {
     
       tabNavs[i].addEventListener("click", function(e){
         e.preventDefault();
-        var activeTabAttr = e.target.getAttribute("data-tab");
+        let activeTabAttr = e.target.getAttribute("data-tab");
     
-        for (var j = 0; j < tabNavs.length; j++) {
-          var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+        for (let j = 0; j < tabNavs.length; j++) {
+          let contentAttr = tabPanes[j].getAttribute("data-tab-content");
     
           if (activeTabAttr === contentAttr) {
             tabNavs[j].classList.add("active");
