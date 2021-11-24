@@ -20,7 +20,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 } else {
   
     document.querySelector('.js-tab-content.active').classList.remove('active');
-    document.querySelector('.js-tab-trigger.active').classList.remove('active');
+    // document.querySelector('.js-tab-trigger.active').classList.remove('active');
   
     let tabNavs = document.querySelectorAll(".js-tab-trigger");
     let tabPanes = document.querySelectorAll(".tab-content__item");
