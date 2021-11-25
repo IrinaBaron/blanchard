@@ -1604,6 +1604,10 @@ body.active {
   color: var(--hover-color);
 }
 
+/* .ui-corner-all .ui-accordion-content {
+  display: block;
+} */
+
 .ui-accordion-content .ui-accordion-content-active {
   display: flex;
   flex-direction: column;

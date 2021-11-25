@@ -3,6 +3,8 @@ $(function() {
   active: false,
   heightStyle: "content",
   icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" },
+  collapsible: false,
+  header: 'button',
   // collapsible: false,
 	});
   // $( ".selector" ).accordion({
@@ -16,20 +18,27 @@ $(function() {
   // }
 });
 
-$(function($){
-	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $("#accordion"); // тут указываем ID элемента
-    let info = $('.ui-accordion-content');
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-          $('.info-right-subtitle').removeClass('ui-state-active'); // скрываем его
-          $('.info-right-subtitle').removeClass('ui-accordion-header-active');
-          $('.ui-accordion-content').removeClass('ui-accordion-content-active');
-          // info.hide();
-          //'ui-accordion-header-active', 
-		}
-	});
-});
+// $(function($){
+// 	$(document).mouseup(function (e){ // событие клика по веб-документу
+// 		var div = $("#accordion"); // тут указываем ID элемента
+//     let info = $('.ui-accordion-content');
+// 		if (!div.is(e.target)) // если клик был не по нашему блоку
+//      { // и не по его дочерним элементам
+//       $('.info-right-subtitle').removeClass('ui-accordion-header-active');
+//           $('.info-right-subtitle').removeClass('ui-state-active'); // скрываем его
+         
+//           $('.ui-corner-all').removeClass('ui-accordion-content-active');
+//           // info.css('display', 'none');
+//           $('.info-right-subtitle').addClass('ui-accordion-header-collapsed')
+//           // info.hide();
+//           //'ui-accordion-header-active', 
+// 		} 
+//     // else {
+//     //   $('.ui-corner-all').css('display', 'block');
+//     //   $('.ui-accordion-content').css('display', 'flex');
+//     // }
+// 	});
+// });
 
 
 
