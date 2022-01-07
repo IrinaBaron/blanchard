@@ -4,19 +4,17 @@ var swiper4 = new Swiper('.swiper4', {
 	slidesPerView: 3,
 	spaceBetween: 50,
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-container-wrap .swiper-button-next',
+		prevEl: '.swiper-container-wrap .swiper-button-prev',
 	  },
     breakpoints: {
       320: {
         slidesPerGroup: 1,
         slidesPerView: 1,
-        // spaceBetween: 80,
       },
       500: {
         slidesPerGroup: 1,
         slidesPerView: 1,
-        // spaceBetween: 100,
       },
       768: {
         slidesPerGroup: 2,

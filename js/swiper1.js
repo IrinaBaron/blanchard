@@ -13,17 +13,18 @@ const swiper1 = new Swiper('.swiper2', {
 	grid: {
     fill: 'row',
   },
-  loop: false,
-	pagination: {
+  // loop: false,
+	
+	navigation: {
+		nextEl: '.swiper2 .swiper-button-next2',
+		prevEl: '.swiper2 .swiper-button-prev2',
+    // hideOnClick: true,
+	},
+  pagination: {
 		el: '.swiper-pagination1',
 		type: 'fraction',
 		clickable: true,
-    dynamicBullets: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next2',
-		prevEl: '.swiper-button-prev2',
-    hideOnClick: true,
+    // dynamicBullets: true,
 	},
 	breakpoints: {
     320: {

@@ -28,7 +28,6 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         spaceBetween: 49,
       },
       1281: {
-        // slidesPerGroup: 2,
         slidesPerView: 3,
         spaceBetween: 49,
       },

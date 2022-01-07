@@ -878,7 +878,6 @@ p {
   transition: background-image .4s ease-in-out;
 }
 
-
 .swiper3 .swiper-button-prev {
   position: absolute;
   top: 46px;
@@ -956,7 +955,6 @@ p {
   border: 1px solid var(--color-dark);
   border-radius: 50px;
 }
-
 
 .swiper-pagination1 {
   margin-bottom: 28px;
@@ -1604,10 +1602,6 @@ body.active {
   color: var(--hover-color);
 }
 
-/* .ui-corner-all .ui-accordion-content {
-  display: block;
-} */
-
 .ui-accordion-content .ui-accordion-content-active {
   display: flex;
   flex-direction: column;
@@ -2164,7 +2158,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .tooltip {
-  position: relative;
+  /* position: relative; */
   margin-bottom: 22px;
 }
 
@@ -2201,6 +2195,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tooltip__content {
   position: absolute;
+  left: 50%;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2377,47 +2372,8 @@ input[type="number"]::-webkit-inner-spin-button {
   z-index: 15;
 } */
 
-/* .swiper-proects:not(:last-child) {
-  margin-right: 50px;
-} */
 
-/* .proects-slide-1 {
-  background-image: url('../image/partners/partners_01.png');
-} */
-
-/* .proects-slide-2 {
-  background-image: url('../image/partners/partners_02.png');
-}
-
-.proects-slide-3 {
-  background-image: url('../image/partners/partners_03.png');
-}
-
-.proects-slide-4 {
-  background-image: url('../image/partners/partners_04.png');
-}
-
-.proects-slide-5 {
-  background-image: url('../image/partners/partners_05.png');
-}
-
-.proects-slide-6 {
-  background-image: url('../image/partners/partners_06.png');
-}
-
-.proects-slide-7 {
-  background-image: url('../image/partners/partners_07.png');
-}
-
-.proects-slide-8 {
-  background-image: url('../image/partners/partners_08.png');
-}
-
-.proects-slide-9 {
-  background-image: url('../image/partners/partners_09.png');
-} */
-
-.swiper-container-wrap .swiper-button-prev {
+.swiper-container-wrap .btn-prev4 {
   position: absolute;
   top: 52%;
   left: 4px;
@@ -2448,7 +2404,7 @@ input[type="number"]::-webkit-inner-spin-button {
   content: '';
 }
 
-.swiper-container-wrap .swiper-button-next {
+.swiper-container-wrap .btn-next4 {
   position: absolute;
   top: 52%;
   left: 98%;
