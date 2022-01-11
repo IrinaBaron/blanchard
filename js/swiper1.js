@@ -16,8 +16,8 @@ const swiper1 = new Swiper('.swiper2', {
   // loop: false,
 	
 	navigation: {
-		nextEl: '.swiper2 .swiper-button-next2',
-		prevEl: '.swiper2 .swiper-button-prev2',
+		nextEl: '.swiper2 .swiper-button-next',
+		prevEl: '.swiper2 .swiper-button-prev',
     // hideOnClick: true,
 	},
   pagination: {

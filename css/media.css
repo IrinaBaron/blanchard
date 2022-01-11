@@ -408,7 +408,6 @@
   }
 
   .search-form__close.search-active {
-    /* top: 36px; */
     width: 22px;
     height: 22px;
     background: transparent;
@@ -639,16 +638,6 @@
     width: 165px;
   }
 
-  /* .tool-1 {
-    left: 68%;
-    bottom: 200px;
-  } */
-
-  /* .tool-2 {
-    left: 12%;
-    transform: translateX(-51%);
-  } */
-
   .tool-3 {
     left: 45%;
   }
@@ -664,7 +653,6 @@
   }
 
   .swiper4 {
-    /* padding-left: 57px; */
     max-width: 85%;
     height: 128px;
   }
@@ -1124,12 +1112,10 @@
   }
 
   .catalog__info .ui-accordion-content {
-    /* min-height: 420px; */
     max-height: 384px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* visibility: hidden; */
   }
 
   .info-left {
@@ -1219,10 +1205,6 @@
     left: 15%;
   }
 
-  /* .swiper3 .swiper-wrapper {
-    padding-left: 27px;
-  } */
-
   .pub__price {
     right: 5px;
   } 
@@ -1260,25 +1242,8 @@
 
   .tooltip__icon:hover,
   .tooltip__icon:active {
-    /* top: 57px; */
     background-image: url('../image/1024_hover_tooltip.svg');
   }
-
-  /* .tool-1 {
-    left: 44%;
-    bottom: 285px;
-  } */
-
-  /* .tool-2 {
-    left: 13%;
-    bottom: 162px;
-  } */
-
-  /* .tool-3 {
-    right: 0;
-    left: 30%;
-    bottom: 186px;
-  } */
 
   .proects__subtitle {
     margin-bottom: 18px;
@@ -1292,7 +1257,6 @@
   .swiper-proects {
     width: 80%;
     height: 52px;
-    /* background-size: 100% 108px; */
   }
 
   .proects .swiper-button-prev {
@@ -1780,13 +1744,13 @@
     width: 200px;
   }
 
-  .swiper2 .swiper-button-prev2 {
+  .swiper2 .swiper-button-prev {
     position: absolute;
     top: 400px;
     left: 34%;
   }
 
-  .swiper2 .swiper-button-next2 {
+  .swiper2 .swiper-button-next {
     position: absolute;
     top: 399px;
     left: 56%;
@@ -1975,7 +1939,6 @@
 
   .pub__price {
     top: 75%;
-    /* right: 157px; */
   }
 
   .pub__btn {
@@ -2006,34 +1969,13 @@
     background-image: url('../image/1024_hover_tooltip.svg');
   }
 
-  /* .tool-1 {
-    left: 468px;
-    bottom: 362px;
-  } */
-
-  /* .tool-2 {
-    left: 23%;
-    bottom: 195px;
-    min-height: 32px;
-    padding: 6px 10px;
-  } */
-
-  /* .tool-3 {
-    right: 0;
-    left: 37%;
-    bottom: 227px;
-  } */
-
   .swiper4 {
     max-width: 70%;
-    /* padding-left: 51px; */
   }
 
   .swiper-proects {
-    /* padding-left: 120px; */
     max-width: 70%;
     height: 45px;
-    /* background-size: 295px 65px; */
   }
 
   .proects .swiper-button-next {
@@ -2081,7 +2023,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    /* order: 1; */
   }
 
   .contacts__address {
@@ -2522,13 +2463,13 @@
     width: 100%;
   }
 
-  .swiper2 .swiper-button-prev2 {
+  .swiper2 .swiper-button-prev {
     position: absolute;
     top: 392px;
     left: 22%;
   }
 
-  .swiper2 .swiper-button-next2 {
+  .swiper2 .swiper-button-next {
     position: absolute;
     top: 391px;
     left: 62%;
@@ -2605,7 +2546,6 @@
   .tab-header__item.active {
     position: relative;
     display: block;
-    /* top: -6px; */
   }
 
   .js-tab-trigger.active::after {
@@ -2613,10 +2553,6 @@
     width: 44px;
     height: 44px;
   }
-
-  /* .catalog__item {
-    height: 44px;
-  } */
 
   .tab {
     margin-bottom: 70px;
@@ -3046,7 +2982,6 @@
   }
 
   .swiper-proects {
-    /* padding-left: 34px; */
     max-width: 100%;
     height: 26px;
     background-size: 195px 65px;

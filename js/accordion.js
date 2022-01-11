@@ -18,29 +18,6 @@ $(function() {
   // }
 });
 
-// $(function($){
-// 	$(document).mouseup(function (e){ // событие клика по веб-документу
-// 		var div = $("#accordion"); // тут указываем ID элемента
-//     let info = $('.ui-accordion-content');
-// 		if (!div.is(e.target)) // если клик был не по нашему блоку
-//      { // и не по его дочерним элементам
-//       $('.info-right-subtitle').removeClass('ui-accordion-header-active');
-//           $('.info-right-subtitle').removeClass('ui-state-active'); // скрываем его
-         
-//           $('.ui-corner-all').removeClass('ui-accordion-content-active');
-//           // info.css('display', 'none');
-//           $('.info-right-subtitle').addClass('ui-accordion-header-collapsed')
-//           // info.hide();
-//           //'ui-accordion-header-active', 
-// 		} 
-//     // else {
-//     //   $('.ui-corner-all').css('display', 'block');
-//     //   $('.ui-accordion-content').css('display', 'flex');
-//     // }
-// 	});
-// });
-
-
 
 if (window.matchMedia("(max-width: 768px)").matches) {
 
