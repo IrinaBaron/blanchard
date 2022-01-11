@@ -636,6 +636,7 @@
 
   .tooltip__content {
     padding: 6px 10px;
+    width: 165px;
   }
 
   /* .tool-1 {
@@ -643,13 +644,13 @@
     bottom: 200px;
   } */
 
-  .tool-2 {
+  /* .tool-2 {
     left: 12%;
     transform: translateX(-51%);
-  }
+  } */
 
   .tool-3 {
-    left: 57%;
+    left: 45%;
   }
 
   .tooltip__icon:hover + .tooltip__content,
@@ -1268,16 +1269,16 @@
     bottom: 285px;
   } */
 
-  .tool-2 {
+  /* .tool-2 {
     left: 13%;
     bottom: 162px;
-  }
+  } */
 
-  .tool-3 {
+  /* .tool-3 {
     right: 0;
     left: 30%;
     bottom: 186px;
-  }
+  } */
 
   .proects__subtitle {
     margin-bottom: 18px;
@@ -2010,18 +2011,18 @@
     bottom: 362px;
   } */
 
-  .tool-2 {
+  /* .tool-2 {
     left: 23%;
     bottom: 195px;
     min-height: 32px;
     padding: 6px 10px;
-  }
+  } */
 
-  .tool-3 {
+  /* .tool-3 {
     right: 0;
     left: 37%;
     bottom: 227px;
-  }
+  } */
 
   .swiper4 {
     max-width: 70%;
@@ -3019,15 +3020,12 @@
   }
 
   .tool-2 {
-    left: 86%;
-    bottom: 350px;
-    min-height: 32px;
+    width: auto;
   }
 
   .tool-3 {
-    right: 0;
-    left: 31%;
-    bottom: 392px;
+    width: 160px;
+    left: -60px;
   }
 
   .proects__subtitle {
@@ -3210,5 +3208,13 @@
   .tool-1 {
     width: auto;
     left: 45px;
+  }
+
+  .tool-2 {
+    width: auto;
+  }
+
+  .tool-3 {
+    left: 80px;
   }
 }

@@ -2203,6 +2203,8 @@ input[type="number"]::-webkit-inner-spin-button {
   /* top: 50%; */
   left: 50%;
   padding: 8px 11px 8px 11px;
+  max-width: 264px;
+  width: 264px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2217,11 +2219,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .tool-1 {
-  /* top: 0; */
-  /* left: 27%; */
   bottom: 35px;
-  max-width: 264px;
-  width: 264px;
   min-height: 50px;
   opacity: 0;
   /* transform: translateX(-27%); */
@@ -2241,9 +2239,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .tool-2 {
-  left: 42%;
-  bottom: 106px;
-  max-width: 264px;
+  bottom: 35px;
   min-height: 39px;
   opacity: 0;
 }
@@ -2251,15 +2247,13 @@ input[type="number"]::-webkit-inner-spin-button {
 .tool-2::after {
   content: '';
   position: absolute;
-  left: 51%;
+  left: 48%;
   bottom: -20%;
 }
 
 .tool-3 {
-  right: -18%;
-  bottom: 138px;
+  bottom: 35px;
   padding: 8px 11px 10px 11px;
-  max-width: 264px;
   min-height: 41px;
   opacity: 0;
 }
@@ -2267,8 +2261,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .tool-3::after {
   content: '';
   position: absolute;
-  left: 52%;
-  bottom: -15%;
+  left: 47%;
 }
 
 .tooltip__icon:hover + .tooltip__content,
