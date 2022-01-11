@@ -634,6 +634,10 @@
     background-image: url('../image/1024_hover_tooltip.svg');
   }
 
+  .tooltip__content {
+    padding: 6px 10px;
+  }
+
   /* .tool-1 {
     left: 68%;
     bottom: 200px;
@@ -2974,6 +2978,7 @@
   .proects__container {
     padding-top: 51px;
     padding-bottom: 49px;
+    padding-left: 15px;
   }
 
   .proects__title {
@@ -2994,6 +2999,10 @@
     transition: background-image .4s ease-in-out;
   }
 
+  .tooltip__content {
+    padding: 6px 10px;
+  }
+
   .tooltip__content::after {
     visibility: hidden;
   }
@@ -3003,16 +3012,16 @@
     background-image: url('../image/1024_hover_tooltip.svg');
   }
 
-  /* .tool-1 {
-    left: 90px;
-    bottom: 610px;
-  } */
+  .tool-1 {
+    width: 240px;
+    left: -100px;
+    bottom: 44px;
+  }
 
   .tool-2 {
     left: 86%;
     bottom: 350px;
     min-height: 32px;
-    padding: 6px 10px;
   }
 
   .tool-3 {
@@ -3035,7 +3044,6 @@
 
   .swiper4 {
     max-width: 70%;
-    /* padding-left: 40px; */
     height: 65px;
   }
 
@@ -3195,5 +3203,12 @@
   .footer__link svg {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media (max-width: 328px) {
+  .tool-1 {
+    width: auto;
+    left: 45px;
   }
 }

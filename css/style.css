@@ -2202,6 +2202,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   /* top: 50%; */
   left: 50%;
+  padding: 8px 11px 8px 11px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -2219,7 +2220,6 @@ input[type="number"]::-webkit-inner-spin-button {
   /* top: 0; */
   /* left: 27%; */
   bottom: 35px;
-  padding: 8px 11px 8px 11px;
   max-width: 264px;
   width: 264px;
   min-height: 50px;
@@ -2243,7 +2243,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .tool-2 {
   left: 42%;
   bottom: 106px;
-  padding: 8px 11px 8px 11px;
   max-width: 264px;
   min-height: 39px;
   opacity: 0;
