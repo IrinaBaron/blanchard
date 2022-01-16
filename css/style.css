@@ -892,8 +892,6 @@ p {
 
 .swiper2 .swiper-button-prev:focus,
 .swiper3 .swiper-button-prev:focus {
-  /* border: 1px solid var(--color-dark);
-  border-radius: 50px; */
   background-image: url('../image/swiper_left_active.svg');
 }
 
@@ -933,9 +931,7 @@ p {
 
 .swiper2 .swiper-button-next:focus,
 .swiper3 .swiper-button-next:focus {
-  /* border: 1px solid var(--color-dark);
-  border-radius: 50px; */
-  background-image: url('../image/swiper_left_active.svg');
+  background-image: url('../image/swiper_right_active.svg');
 }
 
 .swiper-pagination1 {
@@ -1340,7 +1336,6 @@ body.active {
 
 .catalog__btn:focus {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
-  /* border-radius: 50%; */
 }
 
 .js-tab-trigger::after {
