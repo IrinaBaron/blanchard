@@ -23,52 +23,29 @@ document.addEventListener('DOMContentLoaded', event => {
 
   }
 
-  for (let linkItem of linksItems) {
-    linkItem.addEventListener('keypress', clickKey);
-  }
+  // for (let linkItem of linksItems) {
+  //   linkItem.addEventListener('keypress', clickKey);
+  // }
 
   function clickOn(event) {
-
     dropdowns.forEach(dropdown => {
       if (dropdown !== this.nextElementSibling) {
         dropdown.classList.remove('show');
       }
     });
-
     this.nextElementSibling.classList.toggle('show');
-
   }
 
   // window
-  function clickKey(e) {
-    console.log(e.currentTarget)
-    console.log(e.type)
-    if(e.key == 'Enter') {
-      console.log('ok');
-      clickOn;
-      // for (let headerLink of headerLinks) {
-      //   e.currentTarget.addEventListener('click', clickOn);
+  // function clickKey(e) {
     
-      // }
-    }
-  //   if (!e.target.matches('.header-menu__item .menu-item__click')) {
-
-  //     for (let i = 0; i < dropdowns.length; i++) {
-  //       let openDropdown = dropdowns[i];
-
-  //       if (openDropdown.classList.contains('show')) {
-  //         openDropdown.classList.remove('show');
-  //       }
-  //     }
+    
+  //   if(e.key == 'Enter') {
+      
+  //     clickOn;
+      
   //   }
-  //   dropdowns.forEach(dropdown => {
-  //     if (dropdown !== this.nextElementSibling) {
-  //       dropdown.classList.remove('show');
-  //     }
-  //   });
-
-  //   this.nextElementSibling.classList.toggle('show');
-  }
+  // }
 
 
 })

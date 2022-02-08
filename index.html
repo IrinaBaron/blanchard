@@ -41,6 +41,7 @@
   <script defer src="js/swiper4.js"></script>
   <script defer src="js/events.js"></script>
   <script defer src="js/validate.js"></script>
+  <script defer src="js/focus-visible.js"></script>
   <script defer src="js/script.js"></script>
 </head>
 
@@ -53,7 +54,7 @@
           <span class="header-burger__menu menu menu2"></span>
           <span class="header-burger__menu menu menu3"></span>
         </div>
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="#" tabindex="-1">
           <img class="logo" src="image/logo.svg" alt="Логотип компании">
         </a>
         <nav class="header__nav nav">
@@ -83,9 +84,9 @@
           <button class="link-btn btn" aria-label="войти личный кабинет">Войти</button>
         </nav>
         <form class="header__search search-form">
-          <input class="search-form__input" type="search" value="" aria-label="поиск">
+          <input class="search-form__input" type="search" value="" aria-label="поиск" tabindex="-1">
           <a class="search-form__close" aria-label="Кнопка закрыть"></a>
-          <button class="search-form__search" aria-label="Кнопка найти"></button>
+          <button class="search-form__search" aria-label="Кнопка найти" tabindex="-1"></button>
           <a class="header-search__link" href="#" aria-label="Кнопка войти">Войти</a>
         </form>
       </div>
@@ -97,18 +98,18 @@
             <button class="menu-item__click" id="myFunction">Реализм</button>
             <div class="menu-item__link">
               <ul class="menu-link__drop drop-list scroll" id="myDrop1" data-simplebar>
-                <li class="drop-list__popup pic-01">Тинторетто</li>
-                <li class="drop-list__popup pic-02">Фридрих</li>
-                <li class="drop-list__popup pic-03">Леонардо</li>
-                <li class="drop-list__popup pic-04">Верроккьо</li>
-                <li class="drop-list__popup pic-01">Тинторетто</li>
-                <li class="drop-list__popup pic-02">Фридрих</li>
-                <li class="drop-list__popup pic-03">Леонардо</li>
-                <li class="drop-list__popup pic-04">Верроккьо</li>
-                <li class="drop-list__popup pic-01">Тинторетто</li>
-                <li class="drop-list__popup pic-02">Фридрих</li>
-                <li class="drop-list__popup pic-03">Леонардо</li>
-                <li class="drop-list__popup pic-04">Верроккьо</li>
+                <li class="drop-list__popup pic-01" tabindex="0">Тинторетто</li>
+                <li class="drop-list__popup pic-02" tabindex="0">Фридрих</li>
+                <li class="drop-list__popup pic-03" tabindex="0">Леонардо</li>
+                <li class="drop-list__popup pic-04" tabindex="0">Верроккьо</li>
+                <li class="drop-list__popup pic-01" tabindex="0">Тинторетто</li>
+                <li class="drop-list__popup pic-02" tabindex="0">Фридрих</li>
+                <li class="drop-list__popup pic-03" tabindex="0">Леонардо</li>
+                <li class="drop-list__popup pic-04" tabindex="0">Верроккьо</li>
+                <li class="drop-list__popup pic-01" tabindex="0">Тинторетто</li>
+                <li class="drop-list__popup pic-02" tabindex="0">Фридрих</li>
+                <li class="drop-list__popup pic-03" tabindex="0">Леонардо</li>
+                <li class="drop-list__popup pic-04" tabindex="0">Верроккьо</li>
               </ul>
             </div>
           </li>
@@ -116,18 +117,18 @@
             <button class="menu-item__click" id="my_Drop2">Импрессионизм</button>
             <div class="menu-item__link">
               <ul class="menu-link__drop drop-list scroll" id="myDrop2" data-simplebar>
-                <li class="drop-list__popup pic-2-01">Моне</li>
-                <li class="drop-list__popup pic-2-02">Сислей</li>
-                <li class="drop-list__popup pic-2-03">Мане</li>
-                <li class="drop-list__popup pic-2-04">Ренуар</li>
-                <li class="drop-list__popup pic-2-01">Моне</li>
-                <li class="drop-list__popup pic-2-02">Сислей</li>
-                <li class="drop-list__popup pic-2-03">Мане</li>
-                <li class="drop-list__popup pic-2-04">Ренуар</li>
-                <li class="drop-list__popup pic-2-01">Моне</li>
-                <li class="drop-list__popup pic-2-02">Сислей</li>
-                <li class="drop-list__popup pic-2-03">Мане</li>
-                <li class="drop-list__popup pic-2-04">Ренуар</li>
+                <li class="drop-list__popup pic-2-01" tabindex="0">Моне</li>
+                <li class="drop-list__popup pic-2-02" tabindex="0">Сислей</li>
+                <li class="drop-list__popup pic-2-03" tabindex="0">Мане</li>
+                <li class="drop-list__popup pic-2-04" tabindex="0">Ренуар</li>
+                <li class="drop-list__popup pic-2-01" tabindex="0">Моне</li>
+                <li class="drop-list__popup pic-2-02" tabindex="0">Сислей</li>
+                <li class="drop-list__popup pic-2-03" tabindex="0">Мане</li>
+                <li class="drop-list__popup pic-2-04" tabindex="0">Ренуар</li>
+                <li class="drop-list__popup pic-2-01" tabindex="0">Моне</li>
+                <li class="drop-list__popup pic-2-02" tabindex="0">Сислей</li>
+                <li class="drop-list__popup pic-2-03" tabindex="0">Мане</li>
+                <li class="drop-list__popup pic-2-04" tabindex="0">Ренуар</li>
               </ul>
             </div>
           </li>
@@ -135,18 +136,18 @@
             <button class="menu-item__click" id="my_Drop3">Постимпрессионизм</button>
             <div class="menu-item__link">
               <ul class="menu-link__drop drop-list scroll" id="myDrop3" data-simplebar>
-                <li class="drop-list__popup pic-3-01">Ван Гог</li>
-                <li class="drop-list__popup pic-3-02">Сезанн</li>
-                <li class="drop-list__popup pic-3-03">Гоген</li>
-                <li class="drop-list__popup pic-3-04">Сёра</li>
-                <li class="drop-list__popup pic-3-01">Ван Гог</li>
-                <li class="drop-list__popup pic-3-02">Сезанн</li>
-                <li class="drop-list__popup pic-3-03">Гоген</li>
-                <li class="drop-list__popup pic-3-04">Сёра</li>
-                <li class="drop-list__popup pic-3-01">Ван Гог</li>
-                <li class="drop-list__popup pic-3-02">Сезанн</li>
-                <li class="drop-list__popup pic-3-03">Гоген</li>
-                <li class="drop-list__popup pic-3-04">Сёра</li>
+                <li class="drop-list__popup pic-3-01" tabindex="0">Ван Гог</li>
+                <li class="drop-list__popup pic-3-02" tabindex="0">Сезанн</li>
+                <li class="drop-list__popup pic-3-03" tabindex="0">Гоген</li>
+                <li class="drop-list__popup pic-3-04" tabindex="0">Сёра</li>
+                <li class="drop-list__popup pic-3-01" tabindex="0">Ван Гог</li>
+                <li class="drop-list__popup pic-3-02" tabindex="0">Сезанн</li>
+                <li class="drop-list__popup pic-3-03" tabindex="0">Гоген</li>
+                <li class="drop-list__popup pic-3-04" tabindex="0">Сёра</li>
+                <li class="drop-list__popup pic-3-01" tabindex="0">Ван Гог</li>
+                <li class="drop-list__popup pic-3-02" tabindex="0">Сезанн</li>
+                <li class="drop-list__popup pic-3-03" tabindex="0">Гоген</li>
+                <li class="drop-list__popup pic-3-04" tabindex="0">Сёра</li>
               </ul>
             </div>
           </li>
@@ -154,18 +155,18 @@
             <button class="menu-item__click" id="my_Drop4">Авангард</button>
             <div class="menu-item__link">
               <ul class="menu-link__drop drop-list scroll" id="myDrop4" data-simplebar>
-                <li class="drop-list__popup pic-4-01">Кандинский</li>
-                <li class="drop-list__popup pic-4-02">Маринетти</li>
-                <li class="drop-list__popup pic-4-03">Малевич</li>
-                <li class="drop-list__popup pic-4-04">Пикассо</li>
-                <li class="drop-list__popup pic-4-01">Кандинский</li>
-                <li class="drop-list__popup pic-4-02">Маринетти</li>
-                <li class="drop-list__popup pic-4-03">Малевич</li>
-                <li class="drop-list__popup pic-4-04">Пикассо</li>
-                <li class="drop-list__popup pic-4-01">Кандинский</li>
-                <li class="drop-list__popup pic-4-02">Маринетти</li>
-                <li class="drop-list__popup pic-4-03">Малевич</li>
-                <li class="drop-list__popup pic-4-04">Пикассо</li>
+                <li class="drop-list__popup pic-4-01" tabindex="0">Кандинский</li>
+                <li class="drop-list__popup pic-4-02" tabindex="0">Маринетти</li>
+                <li class="drop-list__popup pic-4-03" tabindex="0">Малевич</li>
+                <li class="drop-list__popup pic-4-04" tabindex="0">Пикассо</li>
+                <li class="drop-list__popup pic-4-01" tabindex="0">Кандинский</li>
+                <li class="drop-list__popup pic-4-02" tabindex="0">Маринетти</li>
+                <li class="drop-list__popup pic-4-03" tabindex="0">Малевич</li>
+                <li class="drop-list__popup pic-4-04" tabindex="0">Пикассо</li>
+                <li class="drop-list__popup pic-4-01" tabindex="0">Кандинский</li>
+                <li class="drop-list__popup pic-4-02" tabindex="0">Маринетти</li>
+                <li class="drop-list__popup pic-4-03" tabindex="0">Малевич</li>
+                <li class="drop-list__popup pic-4-04" tabindex="0">Пикассо</li>
               </ul>
             </div>
           </li>
@@ -173,25 +174,25 @@
             <button class="menu-item__click" id="my_Drop5">Футуризм</button>
             <div class="menu-item__link">
               <ul class="menu-link__drop drop-list scroll" id="myDrop5" data-simplebar>
-                <li class="drop-list__popup pic-5-01">Карра</li>
-                <li class="drop-list__popup pic-5-02">Прателла</li>
-                <li class="drop-list__popup pic-5-03">Северини</li>
-                <li class="drop-list__popup pic-5-04">Балла</li>
-                <li class="drop-list__popup pic-5-01">Карра</li>
-                <li class="drop-list__popup pic-5-02">Прателла</li>
-                <li class="drop-list__popup pic-5-03">Северини</li>
-                <li class="drop-list__popup pic-5-04">Балла</li>
-                <li class="drop-list__popup pic-5-01">Карра</li>
-                <li class="drop-list__popup pic-5-02">Прателла</li>
-                <li class="drop-list__popup pic-5-03">Северини</li>
-                <li class="drop-list__popup pic-5-04">Балла</li>
+                <li class="drop-list__popup pic-5-01" tabindex="0">Карра</li>
+                <li class="drop-list__popup pic-5-02" tabindex="0">Прателла</li>
+                <li class="drop-list__popup pic-5-03" tabindex="0">Северини</li>
+                <li class="drop-list__popup pic-5-04" tabindex="0">Балла</li>
+                <li class="drop-list__popup pic-5-01" tabindex="0">Карра</li>
+                <li class="drop-list__popup pic-5-02" tabindex="0">Прателла</li>
+                <li class="drop-list__popup pic-5-03" tabindex="0">Северини</li>
+                <li class="drop-list__popup pic-5-04" tabindex="0">Балла</li>
+                <li class="drop-list__popup pic-5-01" tabindex="0">Карра</li>
+                <li class="drop-list__popup pic-5-02" tabindex="0">Прателла</li>
+                <li class="drop-list__popup pic-5-03" tabindex="0">Северини</li>
+                <li class="drop-list__popup pic-5-04" tabindex="0">Балла</li>
               </ul>
             </div>
           </li>
         </ul>
         <form class="header-menu__search search-head">
-          <button class="search-head__btn" aria-label="поиск"></button>
-          <label class="search-head__lable" tabindex="0">
+          <button class="search-head__btn" aria-label="поиск" tabindex="-1"></button>
+          <label class="search-head__lable">
             <input class="search-head__input" type="search" value="" placeholder="Поиск по сайту">
           </label>
         </form>
@@ -246,9 +247,9 @@
             Фильтровать по:
           </label>
           <select class="galery-left__select left-select" id="selectCustom">
-            <option class="left-select_option" value="autor">Автор</option>
-            <option class="left-select_option" value="direction">Направление</option>
-            <option class="left-select_option" value="technique">Техника</option>
+            <option class="left-select_option" tabindex="0" value="autor">Автор</option>
+            <option class="left-select_option" tabindex="0" value="direction">Направление</option>
+            <option class="left-select_option" tabindex="0" value="technique">Техника</option>
           </select>
           <p class="galery-left__text">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="autorisation" href="#">авторизуйтесь</a> , либо воспользуйтесь лицензией.
@@ -327,7 +328,7 @@
               Каталог
             </h2>
             <ul class="catalog__list tab-header">
-              <li class="catalog__item" tabindex="0">
+              <li class="catalog__item">
                 <button class="catalog__btn cat-01 tab-header__item js-tab-trigger" data-tab="1" aria-label="Французские художники"></button>
               </li>
               <li class="catalog__item">
@@ -382,88 +383,88 @@
           </div>
           <div class="catalog-info__right info-right" aria-label="Художники">
             <ul class="info-right__list info-right-list ui-accordion" id="accordion" aria-label="Художники">
-              <li class="info-right-list__item" aria-label="Художники с 1400 по 1499" tabindex="0">
+              <li class="info-right-list__item" aria-label="Художники с 1400 по 1499">
                 <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 1400 по 1499">
                   C 1400 по 1499 гг.
                 </button>
                 <div class="ui-corner-all">
                   <ul class="ui-accordion-content" >
-                    <li class="ui-accordion-content__item" tabindex="0">
-                      <button class="ui-accordion-content__link">Бенедетто ди Биндо</button>
+                    <li class="ui-accordion-content__item">
+                      <button class="ui-accordion-content__link" tabindex="0">Бенедетто ди Биндо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Бергоньоне, Амброджо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Бергоньоне, Амброджо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Биссоло, Франческо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Биссоло, Франческо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Больтраффио, Джованни</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Больтраффио, Джованни</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Бонсиньори, Франческо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Бонсиньори, Франческо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Боттичини, Рафаэлло</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Боттичини, Рафаэлло</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Брамантино</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Брамантино</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Бреа, Людовико</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Бреа, Людовико</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Бьяджо д’Антонио Туччи</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Бьяджо д’Антонио Туччи</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Веккьетта</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Веккьетта</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Андреа Верроккьо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Андреа Верроккьо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Доменико Гирландайо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Доменико Гирландайо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Беноццо Гоццоли</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Беноццо Гоццоли</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Граначчи, Франческо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Граначчи, Франческо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Грегорио ди Чекко</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Грегорио ди Чекко</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Джованни да Удине</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Джованни да Удине</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Джованни ди Паоло</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Джованни ди Паоло</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Джорджоне</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Джорджоне</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Парентино, Бернардо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Парентино, Бернардо</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Пезеллино</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Пезеллино</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Пьетро Перуджино</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Пьетро Перуджино</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Перуцци, Бальдассаре</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Перуцци, Бальдассаре</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Пизанелло</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Пизанелло</button>
                     </li>
                     <li class="ui-accordion-content__item">
-                      <button class="ui-accordion-content__link">Пинтуриккьо</button>
+                      <button class="ui-accordion-content__link" tabindex="0">Пинтуриккьо</button>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li class="info-right-list__item" aria-label="Художники с 1500 по 1599"  tabindex="0">
+              <li class="info-right-list__item" aria-label="Художники с 1500 по 1599">
                 <button class="info-right-list__subtitle info-right-subtitle"  aria-label="Художники с 1500 по 1599">
                   C 1500 по 1599 гг.
                 </button>
@@ -545,7 +546,7 @@
                 </div>
               </li>
               <li class="info-right-list__item" aria-label="Художники с 1600 по 1699">
-                <button class="info-right-list__subtitle info-right-subtitle" tabindex="0" aria-label="Художники с 1600 по 1699">
+                <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 1600 по 1699">
                   C 1600 по 1699 гг.
                 </button>
                 <div class="ui-corner-all">
@@ -626,7 +627,7 @@
                 </div>
               </li>
               <li class="info-right-list__item" aria-label="Художники с 1700 по 1799">
-                <button class="info-right-list__subtitle info-right-subtitle" tabindex="0" aria-label="Художники с 1700 по 1799">
+                <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 1700 по 1799">
                   C 1700 по 1799 гг.
                 </button>
                 <div class="ui-corner-all">
@@ -706,8 +707,8 @@
                   </ul>
                 </div>
               </li>
-              <li class="info-right-list__item" tabindex="0" aria-label="Художники с 1800 по 1899">
-                <button class="info-right-list__subtitle info-right-subtitle" tabindex="0" aria-label="Художники с 1800 по 1899">
+              <li class="info-right-list__item" aria-label="Художники с 1800 по 1899">
+                <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 1800 по 1899">
                   C 1800 по 1899 гг.
                 </button>
                 <div class="ui-corner-all">
@@ -787,8 +788,8 @@
                   </ul>
                 </div>
               </li>
-              <li class="info-right-list__item" tabindex="0" aria-label="Художники с 1900 по 1999">
-                <button class="info-right-list__subtitle info-right-subtitle" tabindex="0" aria-label="Художники с 1900 по 1999">
+              <li class="info-right-list__item" aria-label="Художники с 1900 по 1999">
+                <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 1900 по 1999">
                   C 1900 по 1999 гг.
                 </button>
                 <div class="ui-corner-all">
@@ -868,8 +869,8 @@
                   </ul>
                 </div>
               </li>
-              <li class="info-right-list__item" tabindex="0" aria-label="Художники с 2000">
-                <button class="info-right-list__subtitle info-right-subtitle" tabindex="0" aria-label="Художники с 2000">
+              <li class="info-right-list__item" aria-label="Художники с 2000">
+                <button class="info-right-list__subtitle info-right-subtitle" aria-label="Художники с 2000">
                   C 2000 г.
                 </button>
                 <div class="ui-corner-all">
@@ -1280,7 +1281,7 @@
   </main>
   <footer class="footer">
     <div class="container footer-container">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo" href="#" tabindex="-1">
         <img class="footer__img" src="image/logo.svg" alt="Логотип компании">
       </a>
       <ul class="footer__list">
