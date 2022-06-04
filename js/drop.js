@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', event => {
   let myFunction = document.querySelector('#myFunction');
   let headerLinks = document.querySelectorAll('.menu-item__click');
   let linksItems = document.querySelectorAll('.header-menu__item');
-  let dropdowns = document.getElementsByClassName("menu-item__link");
+  let dropdowns = document.querySelectorAll('.menu-item__link');
 
   window.onclick = function (event) {
 
@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', event => {
 
   }
 
-  // for (let linkItem of linksItems) {
-  //   linkItem.addEventListener('keypress', clickKey);
-  // }
 
   function clickOn(event) {
     dropdowns.forEach(dropdown => {
@@ -36,16 +33,7 @@ document.addEventListener('DOMContentLoaded', event => {
     this.nextElementSibling.classList.toggle('show');
   }
 
-  // window
-  // function clickKey(e) {
-    
-    
-  //   if(e.key == 'Enter') {
-      
-  //     clickOn;
-      
-  //   }
-  // }
+
 
 
 })

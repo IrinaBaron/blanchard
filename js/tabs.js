@@ -1,6 +1,6 @@
 if (window.matchMedia("(min-width: 768px)").matches) {
   
-  let jsTriggers = document.getElementsByClassName('js-tab-trigger'),
+  let jsTriggers = document.querySelectorAll('.js-tab-trigger'),
     jsContents = document.querySelectorAll('.js-tab-content');
     jsTriggers.forEach(function (trigger) {
       trigger.addEventListener('click', function (e) {
